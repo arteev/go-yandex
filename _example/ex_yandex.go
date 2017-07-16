@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	v, err := tr.GetLangs("ru")
+	v, err := tr.GetLangs("en")
 	if err != nil {
 		fmt.Println(err)
 	} else {
