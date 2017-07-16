@@ -3,11 +3,13 @@ package main
 import (
 	"fmt"
 
+	"os"
+
 	"github.com/arteev/go-translate"
 	_ "github.com/arteev/go-yandex"
 )
 
-const apikey = "trnsl.1.1.20151024T060812Z.ae5c88028a251edf.99a569ba9eccc2fbb90a19e3ae176b5398defa3d"
+var apikey = os.Getenv("YANDEX_TRANSLATE_KEY")
 
 func main() {
 	tr, err := translate.New("yandex",
